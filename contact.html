@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us | Company Name</title>
+
+<meta name="description" content="Contact Company Name for product information, support, and sales inquiries.">
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Contact Page Schema -->
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ContactPage",
+  "name":"Contact Us",
+  "description":"Contact Company Name for support and inquiries."
+}
+</script>
+
+<style>
+
+.page-banner{
+    background:#f5f5f5;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.contact-container{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 5%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.contact-info{
+    background:#f9f9f9;
+    padding:30px;
+    border-radius:8px;
+}
+
+.contact-info h2{
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin-bottom:15px;
+}
+
+.contact-form{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:8px;
+    padding:30px;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.form-group textarea{
+    height:150px;
+    resize:vertical;
+}
+
+.contact-btn{
+    background:#0056b3;
+    color:#fff;
+    border:none;
+    padding:12px 24px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.contact-btn:hover{
+    background:#004494;
+}
+
+.map-section{
+    max-width:1200px;
+    margin:0 auto 60px;
+    padding:0 5%;
+}
+
+.map-section iframe{
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:8px;
+}
+
+@media(max-width:768px){
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+}
+</style>
+
+</head>
+<body>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+    <select>
+        <option>English</option>
+        <option>Deutsch</option>
+        <option>Français</option>
+        <option>Español</option>
+    </select>
+</div>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="header-container">
+
+    <div class="logo">
+        <img src="images/logo.png" alt="Company Logo">
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <nav class="menu" id="menu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="how-to-order.html">How To Order</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+</div>
+
+</header>
+
+<!-- PAGE HEADER -->
+
+<section class="page-banner">
+
+    <h1>Contact Us</h1>
+
+    <p>
+        We'd love to hear from you. Get in touch with our team today.
+    </p>
+
+</section>
+
+<!-- CONTACT SECTION -->
+
+<section class="contact-container">
+
+    <!-- COMPANY INFO -->
+
+    <div class="contact-info">
+
+        <h2>Company Information</h2>
+
+        <p>
+            <strong>Company Name</strong>
+        </p>
+
+        <p>
+            123 Business Street<br>
+            City, State, Postal Code<br>
+            Country
+        </p>
+
+        <p>
+            📞 +1 (555) 123-4567
+        </p>
+
+        <p>
+            ✉ info@yourcompany.com
+        </p>
+
+        <p>
+            Mon - Fri: 9:00 AM - 5:00 PM
+        </p>
+
+    </div>
+
+    <!-- CONTACT FORM -->
+
+    <div class="contact-form">
+
+        <h2>Send Us A Message</h2>
+
+        <form
+            action="thank-you.html"
+            method="post"
+        >
+
+            <div class="form-group">
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="subject">
+                    Subject
+                </label>
+
+                <select
+                    id="subject"
+                    name="subject"
+                >
+                    <option value="sales">Sales Inquiry</option>
+                    <option value="support">Support</option>
+                    <option value="order">Order Question</option>
+                    <option value="general">General Inquiry</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    required
+                ></textarea>
+            </div>
+
+            <button
+                type="submit"
+                class="contact-btn"
+            >
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- GOOGLE MAP -->
+
+<section class="map-section">
+
+    <h2 style="margin-bottom:20px;">
+        Find Us
+    </h2>
+
+    <!-- Replace with your Google Maps Embed URL -->
+
+    <iframe
+        src="https://maps.google.com/maps?q=Warsaw&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        loading="lazy"
+        allowfullscreen
+    ></iframe>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © <span id="year"></span>
+        COMPANY NAME.
+        All Rights Reserved.
+    </p>
+
+    <p>
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="cookie-policy.html">Cookie Policy</a> |
+        <a href="#" id="footer-cookie-settings">
+            Cookie Settings
+        </a>
+    </p>
+
+</footer>
+
+<!-- COOKIE BANNER -->
+
+<div id="cookie-banner" class="cookie-banner">
+
+    <div class="cookie-banner-content">
+
+        <p>
+            We use cookies to improve website performance,
+            analyze traffic and personalize content.
+        </p>
+
+        <div class="cookie-banner-buttons">
+
+            <button id="accept-all">
+                Accept All
+            </button>
+
+            <button id="reject-all">
+                Reject All
+            </button>
+
+            <button id="customize-cookies">
+                Customize
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- COOKIE MODAL -->
+
+<div id="cookie-modal" class="cookie-modal">
+
+    <div class="cookie-modal-content">
+
+        <h2>Cookie Preferences</h2>
+
+        <div class="cookie-option">
+            <label>
+                <input type="checkbox" checked disabled>
+                Essential Cookies
+            </label>
+        </div>
+
+        <div class="cookie-option">
+            <label>
+                <input type="checkbox" id="analyticsCookies">
+                Analytics Cookies
+            </label>
+        </div>
+
+        <div class="cookie-option">
+            <label>
+                <input type="checkbox" id="marketingCookies">
+                Marketing Cookies
+            </label>
+        </div>
+
+        <div class="cookie-actions">
+            <button id="saveCookies">
+                Save Preferences
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<button id="cookie-settings-btn">
+    🍪 Cookie Settings
+</button>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

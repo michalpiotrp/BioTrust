@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Your Company Name | Premium Products</title>
+
+<meta name="description" content="Your Company Name provides premium products and services.">
+<meta name="keywords" content="products, ecommerce, services">
+<meta name="author" content="Your Company Name">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.yourwebsite.com">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Your Company Name">
+<meta property="og:description" content="Premium products and services.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.yourwebsite.com">
+<meta property="og:image" content="https://www.yourwebsite.com/images/og-image.jpg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Your Company Name">
+<meta name="twitter:description" content="Premium products and services.">
+<meta name="twitter:image" content="https://www.yourwebsite.com/images/og-image.jpg">
+
+<!-- Google Consent Mode -->
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){
+    dataLayer.push(arguments);
+}
+
+gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied'
+});
+</script>
+
+<!-- Organization Schema -->
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Organization",
+ "name":"Your Company Name",
+ "url":"https://www.yourwebsite.com",
+ "logo":"https://www.yourwebsite.com/logo.png"
+}
+</script>
+
+<!-- Product Schema -->
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Product",
+ "name":"Premium Product",
+ "image":"https://www.yourwebsite.com/images/product.jpg",
+ "description":"Premium quality product.",
+ "sku":"PROD001",
+ "brand":{
+   "@type":"Brand",
+   "name":"Your Brand"
+ },
+ "offers":{
+   "@type":"Offer",
+   "priceCurrency":"USD",
+   "price":"99.99",
+   "availability":"https://schema.org/InStock"
+ }
+}
+</script>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+ {
+  "@type":"Question",
+  "name":"How do I order?",
+  "acceptedAnswer":{
+   "@type":"Answer",
+   "text":"Select your product and complete checkout."
+  }
+ }
+ ]
+}
+</script>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="top-bar">
+    <select>
+        <option>English</option>
+        <option>Deutsch</option>
+        <option>Français</option>
+        <option>Español</option>
+    </select>
+</div>
+
+<header>
+    <div class="header-container">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="Company Logo">
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <nav class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="how-to-order.html">How To Order</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-box">
+        <h1>Welcome To Our Website</h1>
+        <p>Premium products and exceptional service.</p>
+    </div>
+</section>
+
+<section class="content">
+    <h2>About Our Products</h2>
+
+    <p>
+        Replace this section with your company content and product information.
+    </p>
+</section>
+
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+        <summary>How do I order?</summary>
+        <p>Select your products and complete checkout.</p>
+    </details>
+
+    <details>
+        <summary>What payment methods do you accept?</summary>
+        <p>Credit cards, bank transfer, and online payment providers.</p>
+    </details>
+
+    <details>
+        <summary>Do you ship worldwide?</summary>
+        <p>Yes, international shipping is available.</p>
+    </details>
+</section>
+
+<footer>
+    <p>
+        © <span id="year"></span> BioTrust. All Rights Reserved.
+    </p>
+
+    <p>
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="cookie-policy.html">Cookie Policy</a> |
+        <a href="#" id="footer-cookie-settings">Cookie Settings</a>
+    </p>
+</footer>
+
+<!-- COOKIE BANNER -->
+
+<div id="cookie-banner" class="cookie-banner">
+
+    <div class="cookie-banner-content">
+
+        <p>
+            We use cookies to improve your browsing experience,
+            analyse traffic and personalise content.
+        </p>
+
+        <div class="cookie-banner-buttons">
+
+            <button id="accept-all">
+                Accept All
+            </button>
+
+            <button id="reject-all">
+                Reject All
+            </button>
+
+            <button id="customize-cookies">
+                Customize
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- COOKIE MODAL -->
+
+<div id="cookie-modal" class="cookie-modal">
+
+    <div class="cookie-modal-content">
+
+        <h2>Cookie Preferences</h2>
+
+        <div class="cookie-option">
+            <label>
+                <input type="checkbox" checked disabled>
+                Essential Cookies
+            </label>
+        </div>
+
+        <div class="cookie-option">
+            <label>
+                <input type="checkbox" id="analyticsCookies">
+                Analytics Cookies
+            </label>
+        </div>
+
+        <div class="cookie-option">
+            <label>
+                <input type="checkbox" id="marketingCookies">
+                Marketing Cookies
+            </label>
+        </div>
+
+        <div class="cookie-actions">
+            <button id="saveCookies">
+                Save Preferences
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<button id="cookie-settings-btn">
+    🍪 Cookie Settings
+</button>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

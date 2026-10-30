@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How To Order | Company Name</title>
+
+<meta name="description" content="Learn how to place an order with Company Name quickly and easily.">
+<meta name="keywords" content="how to order, ordering process, checkout">
+<meta name="author" content="Company Name">
+
+<link rel="canonical" href="https://www.yourwebsite.com/how-to-order.html">
+
+<meta property="og:title" content="How To Order | Company Name">
+<meta property="og:description" content="Simple ordering process for our products.">
+<meta property="og:type" content="website">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.page-banner{
+    background:#f5f5f5;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.page-banner h1{
+    margin-bottom:15px;
+}
+
+.order-container{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 5%;
+}
+
+.steps{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.step-card{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:8px;
+    padding:30px;
+    text-align:center;
+    transition:.3s;
+}
+
+.step-card:hover{
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transform:translateY(-5px);
+}
+
+.step-number{
+    width:60px;
+    height:60px;
+    margin:0 auto 20px;
+    background:#0056b3;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.order-info{
+    margin-top:60px;
+    background:#f9f9f9;
+    padding:30px;
+    border-radius:8px;
+}
+
+.order-info h2{
+    margin-bottom:15px;
+}
+
+.cta-section{
+    text-align:center;
+    margin-top:50px;
+}
+
+.order-btn{
+    display:inline-block;
+    background:#0056b3;
+    color:#fff;
+    padding:12px 24px;
+    border-radius:5px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.order-btn:hover{
+    background:#004494;
+}
+
+</style>
+
+<!-- How To Order Schema -->
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"HowTo",
+ "name":"How to Order Products",
+ "description":"Step-by-step instructions for placing an order.",
+ "step":[
+   {
+     "@type":"HowToStep",
+     "name":"Browse Products",
+     "text":"View our product catalogue."
+   },
+   {
+     "@type":"HowToStep",
+     "name":"Select Products",
+     "text":"Choose the products you wish to purchase."
+   },
+   {
+     "@type":"HowToStep",
+     "name":"Submit Order",
+     "text":"Contact us or place your order online."
+   },
+   {
+     "@type":"HowToStep",
+     "name":"Receive Confirmation",
+     "text":"We confirm and process your order."
+   }
+ ]
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+    <select>
+        <option>English</option>
+        <option>Deutsch</option>
+        <option>Français</option>
+        <option>Español</option>
+    </select>
+</div>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="header-container">
+
+    <div class="logo">
+        <img src="images/logo.png" alt="Company Logo">
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <nav class="menu" id="menu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="how-to-order.html">How To Order</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+</div>
+
+</header>
+
+<!-- PAGE HEADER -->
+
+<section class="page-banner">
+
+    <h1>How To Order</h1>
+
+    <p>
+        Ordering from us is easy. Follow the simple steps below.
+    </p>
+
+</section>
+
+<!-- ORDER STEPS -->
+
+<section class="order-container">
+
+    <div class="steps">
+
+        <div class="step-card">
+
+            <div class="step-number">
+                1
+            </div>
+
+            <h3>Browse Products</h3>
+
+            <p>
+                Visit our Products page and review the available items.
+            </p>
+
+        </div>
+
+        <div class="step-card">
+
+            <div class="step-number">
+                2
+            </div>
+
+            <h3>Select Products</h3>
+
+            <p>
+                Choose the products that best meet your needs.
+            </p>
+
+        </div>
+
+        <div class="step-card">
+
+            <div class="step-number">
+                3
+            </div>
+
+            <h3>Place Your Order</h3>
+
+            <p>
+                Contact us through the website, email, or phone.
+            </p>
+
+        </div>
+
+        <div class="step-card">
+
+            <div class="step-number">
+                4
+            </div>
+
+            <h3>Order Confirmation</h3>
+
+            <p>
+                We will review and confirm your order details.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="order-info">
+
+        <h2>Additional Information</h2>
+
+        <p>
+            After receiving your order, our team will contact you to
+            confirm product availability, pricing, payment details,
+            and estimated delivery times.
+        </p>
+
+        <p>
+            If you have any questions before ordering, please visit
+            our Contact Us page and our team will be happy to assist.
+        </p>
+
+    </div>
+
+    <div class="cta-section">
+
+        <a href="products.html" class="order-btn">
+            Browse Products
+        </a>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © <span id="year"></span>
+        COMPANY NAME.
+        All Rights Reserved.
+    </p>
+
+    <p>
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="cookie-policy.html">Cookie Policy</a> |
+        <a href="#" id="footer-cookie-settings">
+            Cookie Settings
+        </a>
+    </p>
+
+</footer>
+
+<!-- COOKIE BANNER -->
+
+<div id="cookie-banner" class="cookie-banner">
+
+    <div class="cookie-banner-content">
+
+        <p>
+            We use cookies to improve website performance,
+            analyze traffic and personalize content.
+        </p>
+
+        <div class="cookie-banner-buttons">
+
+            <button id="accept-all">
+                Accept All
+            </button>
+
+            <button id="reject-all">
+                Reject All
+            </button>
+
+            <button id="customize-cookies">
+                Customize
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- COOKIE MODAL -->
+
+<div id="cookie-modal" class="cookie-modal">
+
+    <div class="cookie-modal-content">
+
+        <h2>Cookie Preferences</h2>
+
+        <div class="cookie-option">
+            <label>
+                <input type="checkbox" checked disabled>
+                Essential Cookies
+            </label>
+        </div>
+
+        <div class="cookie-option">
+            <label>
+                <input type="checkbox" id="analyticsCookies">
+                Analytics Cookies
+            </label>
+        </div>
+
+        <div class="cookie-option">
+            <label>
+                <input type="checkbox" id="marketingCookies">
+                Marketing Cookies
+            </label>
+        </div>
+
+        <div class="cookie-actions">
+            <button id="saveCookies">
+                Save Preferences
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<button id="cookie-settings-btn">
+    🍪 Cookie Settings
+</button>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
